@@ -1,0 +1,9 @@
+//fonts
+
+$pop: 'Poppins', sans-serif;
+
+
+// Mixins
+@mixin transition($property: all, $duration: 300ms, $animate: linear, $delay:0s){
+    transition: $property $duration $animate $delay; 
+}

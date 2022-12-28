@@ -1,0 +1,77 @@
+{% extends 'main/base.html' %}
+{% block content %} {% load static %}
+<!--    breadcrumb-->
+<section class="row header-breadcrumb parallax-effect">
+    <div class="bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background="">
+        <img src="{% static 'main/image/baner-slider/title-bg-07.jpg' %}" alt="">
+    </div>
+    <div class="container">
+        <div class="row m0 page-cover">
+            <h2 class="page-cover-tittle">Contact</h2>
+        </div>
+    </div>
+</section>
+
+<!--    contact-area-->
+<section class="row contact-area">
+    <div class="container">
+        <div class="row m0 section_header">
+            <h2>Contact Us</h2>
+            <span></span>
+        </div>
+        <p class="recent-p">Please contact us using the information below. For additional information on our management
+            consulting services, please visit the appropriate page on our site.
+        </p>
+        <div class="row contact-form-box">
+            <form action="contact_process.php" id="contactForm" class="row contact-form">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="name" class="input_label">
+                            <input for="range" type="text" id="name" name="name" placeholder="Name" required
+                                class="form-control">
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="name" class="input_label">
+                            <input type="email" id="email" name="email" placeholder="Email" required
+                                class="form-control">
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="name" class="input_label">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone" class="form-control">
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="name" class="input_label">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required
+                                class="form-control">
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-12 form-group">
+                    <div class="message">
+                        <label for="name" class="input_label">
+                            <textarea name="message" id="message" class="form-control" placeholder="Message"></textarea>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-12"><button type="submit" class="btn submit btn-h post">Send Message</button></div>
+            </form>
+            <div id="success">Your message succesfully sent!</div>
+            <div id="error">Opps! There is something wrong. Please try again</div>
+        </div>
+    </div>
+</section>
+
+<!--    map-->
+<section class="map">
+    <div id="mapBox" class="row m0" data-lat="37.3818288" data-lon="-122.0636325" data-zoom="15"></div>
+</section>
+{% endblock content %}

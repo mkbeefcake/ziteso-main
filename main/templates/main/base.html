@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> {% load static %}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Ziteso</title>
+  <!--    favicon-->
+  <link rel="shortcut icon" href="{% static 'main/image/favicon.png' %}">
+  <script src="https://js.stripe.com/v3/"></script>
+  <!--    font-->
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300italic,300,400italic,700,700italic' rel='stylesheet'
+    type='text/css'>
+  <link
+    href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,700italic,400italic,300,300italic,800'
+    rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,500italic,700' rel='stylesheet'
+    type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+  <!-- Bootstrap css -->
+  <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css' %}">
+
+  <!-- Font awesome css -->
+  <link rel="stylesheet" href="{% static 'main/css/font-awesome.min.css' %}">
+
+  <!-- elegant-ico- css -->
+  <link rel="stylesheet" href="{% static 'main/vendors/elegant-icon/style.css' %}">
+  <link rel="stylesheet" href="{% static 'main/vendors/linea-icon/styles.css' %}">
+  <link rel="stylesheet" href="{% static 'main/vendors/themify-icons/themify-icons.css' %}">
+
+  <!-- RS5.0 Main Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="{% static 'main/vendors/revolution/css/settings.css' %}">
+
+  <!-- RS5.0 Layers and Navigation Styles -->
+  <link rel="stylesheet" type="text/css" href="{% static 'main/vendors/revolution/css/layers.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'main/vendors/revolution/css/navigation.css' %}">
+
+  <!--    popup-->
+  <link rel="stylesheet" href="{% static 'main/vendors/magnific/magnific-popup.css' %}">
+  <link rel="stylesheet" href="{% static 'main/vendors/loader/animsition.min.css' %}">
+
+  <!--    owl-carousel-->
+  <link rel="stylesheet" href="{% static 'main/vendors/owlcarousel/owl.carousel.css' %}">
+  <link rel="stylesheet" href="{% static 'main/vendors/swipper/css/swiper.css' %}">
+  <link rel="stylesheet" href="{% static 'main/vendors/video/plyr.css' %}">
+
+  <!-- Custom css -->
+  <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+
+  <!--    responsive css-->
+  <link rel="stylesheet" href="{% static 'main/css/responsive.css' %}">
+
+</head>
+
+<body>
+  <div class="layout animsition">
+    <header>
+      <!--Navigation-->
+      <nav class="navbar navbar-default menu-nav" id="main_navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="{% static 'main/image/favicon.png' %}" width="50%" height="50%"alt=""></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="main_nav collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav menu-left menu">
+              <li class="{% if homePage %} active {% endif %}">
+                <a href="{% url 'home' %}" class="dropdown-toggle m_drop_down" role="button">Home</a>
+              </li>
+              <li class="{% if servicesPage %} active {% endif %}">
+                <a href="{% url 'services' %}" class="dropdown-toggle m_drop_down" role="button">Services</a>
+              </li>
+              <li class="{% if accountPage %} active {% endif %}">
+                <a href="{% url 'users:login' %}" class="dropdown-toggle m_drop_down" role="button">My Account</a>
+              </li>
+              <li class="{% if aboutPage %} active {% endif %}">
+                <a href="{% url 'about' %}" class="dropdown-toggle m_drop_down" role="button">About</a>
+              </li>
+              <li class="{% if contactPage %} active {% endif %}">
+                <a href="{% url 'contact' %}" class="dropdown-toggle m_drop_down" role="button">Contact</a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right menu">
+              <li class="search_dropdown hidden-xs"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                <ul class="search">
+                  <li>
+                    <form action="#" method="get" class="search-form">
+                      <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Search for">
+                        <span class="input-group-addon">
+                          <button type="submit"><i class="fa fa-search"></i></button>
+                        </span>
+                      </div>
+                    </form>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Footer-->
+    {% block content %}
+    {% endblock content %}
+    <footer class="row footer-area">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="widget single-ft-widget col-sm-6 col-lg-3">
+              <ul>
+                <li>
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <div class="location_address fleft">
+                    info@ziteso.com
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="widget contact-from-widget col-sm-6 col-lg-3">
+              <h4 class="widget_title">contact us</h4>
+              <div class="widget-contact-list row m0">
+                <form class="submet-form row m0" action="#" method="post">
+                  <input type="text" class="form-control" id="name" placeholder="Name">
+                  <input type="email" class="form-control" id="email" placeholder="Email">
+                  <textarea class="form-control message" placeholder="Your Message"></textarea>
+                  <button class="submit btn-h" type="submit">send</button>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row m0 footer-bottom">
+        <div class="container">
+          <div class="scroll-t"><i class="fa fa-angle-double-up" aria-hidden="true"></i></div>
+          <div class="row">
+            <div class="col-sm-8">
+              Copyright &copy; 2021 <br class="visible-xs"><a href="#">Ziteso</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- jQuery Latest version -->
+  <script src="{% static 'main/js/jquery-2.2.0.min.js' %}"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="{% static 'main/js/bootstrap.min.js' %}"></script>
+
+  <script src="{% static 'main/vendors/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <!-- Isotop JS -->
+  <script src="{% static 'main/vendors/isotope/isotope.min.js' %}"></script>
+
+  <!--    magnific JS-->
+  <script src="{% static 'main/vendors/magnific/jquery.magnific-popup.min.js' %}"></script>
+
+  <!--    owl-JS-->
+  <script src="{% static 'main/vendors/owlcarousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'main/vendors/video/plyr.js' %}"></script>
+  <script src="{% static 'main/js/stellar.js' %}"></script>
+
+  <!--    counter-up-JS-->
+  <script src="{% static 'main/vendors/countdown/jquery.counterup.min.js' %}"></script>
+  <script src="{% static 'main/vendors/waypoint/waypoints.min.js' %}"></script>
+  <!-- RS5.0 Core JS Files -->
+  <script src="{% static 'main/vendors/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+  <script src="{% static 'main/vendors/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+  <script src="{% static 'main/vendors/revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
+  <!--RS5.0 Extensions-->
+  <script src="{% static 'main/vendors/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+  <script src="{% static 'main/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+  <script
+    src="{% static 'main/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+  <script src="{% static 'main/vendors/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+  <script src="{% static 'main/js/stellar.js' %}"></script>
+  <script src="{% static 'main/vendors/swipper/js/swiper.min.js' %}"></script>
+  <script src="{% static 'main/js/wow.min.js' %}"></script>
+  <script src="{% static 'main/vendors/loader/animsition.min.js' %}"></script>
+
+  <!-- jQuery custom script -->
+  <script src="{% static 'main/js/custom.js' %}"></script>
+</body>
+
+</html>

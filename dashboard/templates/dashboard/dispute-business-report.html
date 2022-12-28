@@ -1,0 +1,53 @@
+{% extends "dashboard/base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="nk-content">
+  <div class="container-fluid">
+    <div class="row page-header">
+      <div class="col-lg-6 align-self-center">
+        <h2> Dispute Business Report</h2>
+      </div>
+    </div>
+    <br />
+    <section class="main-content">
+      <div class="card card-bordered h-100">
+        <div class="card-inner mb-n2">
+          <div class="card-title-group">
+            <div class="card-title card-title">
+              <h6 class="title"> </h6>
+            </div>
+
+          </div>
+        </div>
+        <div class="nk-tb-list is-loose traffic-channel-table">
+          <table class="table table-lg">
+            <tr>
+              <th>Business name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Tradeline age</th>
+              <th>Tradeline date</th>
+              <th>Tradeline amount</th>
+              <th>Status</th>
+            </tr>
+            {% for x in tradelines %}
+            <tr>
+              <td>{{x.business_name}}</td>
+              <td>{{x.email}}</td>
+              <td>{{x.phone}}</td>
+              <td>{{x.tradeline_age}}</td>
+              <td>{{x.tradeline_date}}</td>
+              <td>{{x.tradeline_amount}}</td>
+              <td>{{x.status}}</td>
+            </tr>
+            {% endfor %}
+          </table>
+          <!-- .nk-tb-item -->
+        </div>
+        <!-- .nk-tb-list -->
+      </div>
+  </div>
+  </section>
+</div>
+{% endblock content %}

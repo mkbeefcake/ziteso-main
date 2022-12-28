@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Monte</title>
+    <!--    favicon-->
+    <link rel="shortcut icon" href="image/favicon.png">
+    <!--    font-->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300italic,300,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,700italic,400italic,300,300italic,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,500italic,700' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Font awesome css -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- elegant-ico- css -->
+    <link rel="stylesheet" href="vendors/elegant-icon/style.css">
+
+    <!-- RS5.0 Main Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="vendors/revolution/css/settings.css">
+
+    <!-- RS5.0 Layers and Navigation Styles -->
+    <link rel="stylesheet" type="text/css" href="vendors/revolution/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="vendors/revolution/css/navigation.css">
+
+    <!--    popup-->
+    <link rel="stylesheet" href="vendors/magnific/magnific-popup.css">
+    <link rel="stylesheet" href="vendors/loader/animsition.min.css">
+
+    <!--    owl-carousel-->
+    <link rel="stylesheet" href="vendors/owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="vendors/owlcarousel/animated.css">
+    <link rel="stylesheet" href="vendors/slick/slick-theme.css">
+    <link rel="stylesheet" href="vendors/slick/slick.css">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--    responsive css-->
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+    <div class="layout animsition">
+        <header>
+            <nav class="navbar navbar-default menu-nav menu_two" id="main_navbar">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><img src="image/logo.png" alt=""></a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="main_nav collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right menu">
+                            <li class="search_dropdown hidden-xs"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                                <ul class="search">
+                                    <li>
+                                        <form action="#" method="get" class="search-form">
+                                            <div class="input-group">
+                                                <input type="search" class="form-control" placeholder="Search for">
+                                                <span class="input-group-addon">
+                                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                                </span>
+                                            </div>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="search_dropdown hidden-xs">
+                                <a class="cart-info" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                <ul>
+                                    <li>
+                                        <div class="cart-box table-responsive">
+                                            <div class="media alert" role="alert">
+                                                <div class="media-left"><a href="single-product.html"><img src="image/bag.png" alt=""></a></div>
+                                                <div class="media-body">
+                                                    <a href="single-product.html" class="this-title">Creative vcards</a>
+                                                    <h5 class="price">1 x £5.99</h5>
+                                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><i class="icon_close"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="media alert" role="alert">
+                                                <div class="media-left"><a href="single-product.html"><img src="image/bag2.jpg" alt=""></a></div>
+                                                <div class="media-body">
+                                                    <a href="single-product.html" class="this-title">Creative vcards</a>
+                                                    <h5 class="price">1 x £5.99</h5>
+                                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><i class="icon_close"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="row m0 total-price-count">
+                                                <h5>Subtotal: £38.00</h5>
+                                            </div>
+                                            <div class="row m0 action-btns">
+                                                <a href="shop.html" class="btn cart-btn active">view cart</a>
+                                                <a href="single-shop.html" class="btn checkout-btn">checkout</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EN</a>
+                                <ul class="dropdown-menu country-n">
+                                    <li><a href="#">EN</a></li>
+                                    <li><a href="#">AR</a></li>
+                                    <li><a href="#">GR</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="offcanvas-toggler hidden-xs" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right menu_right menu">
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle m_drop_down" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="creative-agency.html">Home V1</a></li>
+                                    <li><a href="index.html">Home V2</a></li>
+                                    <li><a href="index-2.html">Home V3</a></li>
+                                    <li><a href="index-3.html">Home V4</a></li>
+                                    <li><a href="index-video.html">Home V5</a></li>
+                                    <li><a href="index-4.html">Home V6</a></li>
+                                    <li><a href="index-agency.html">Home V7</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle m_drop_down" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="about-us.html">About us</a></li>
+                                    <li><a href="about-me.html">About Me</a></li>
+                                    <li><a href="services.html">services</a></li>
+                                    <li><a href="services-2.html">services 2</a></li>
+                                    <li><a href="pricing-plans.html">Pricing Plans</a></li>
+                                    <li><a href="contact.html">contact us</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle m_drop_down" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="blog.html">blog</a></li>
+                                    <li><a href="blog-details.html">blog details</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle m_drop_down" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="portfolio.html">Portfolio 1</a></li>
+                                    <li><a href="portfolio-2.html">Portfolio 2</a></li>
+                                    <li><a href="portfolio-3.html">Portfolio 3</a></li>
+
+                                    <li><a href="project-details.html">portfolio details</a></li>
+                                    <li><a href="project-details1.html">portfolio details 1</a></li>
+                                    <li><a href="project-details2.html">portfolio details 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle m_drop_down" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="shop.html">shop</a></li>
+                                    <li><a href="single-shop.html">single shop</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown mega-dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features</a>
+                                <ul class="dropdown-menu mega-drop">
+                                    <li>
+                                        <span><i class="fa fa-stumbleupon" aria-hidden="true"></i>THEME FEATURES</span>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Drag’n’Drop Page Builder</a></li>
+                                            <li><a href="#">Extensive </a></li>
+                                            <li><a href="#">Accelerated Performance</a></li>
+                                            <li><a href="#">One-Click Demo Install<span class="label">New</span></a></li>
+                                            <li><a href="#">3 Page Header Styles</a></li>
+                                            <li><a href="#">9 Stunning Demos</a></li>
+                                            <li><a href="#">Fully Responsive</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span><i class="fa fa-rocket" aria-hidden="true"></i>THEME FEATURES</span>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">42+ Pre-Built Pages</a></li>
+                                            <li><a href="#">Cutting Edges Features</a></li>
+                                            <li><a href="#">20+ Clean Standard Pages</a></li>
+                                            <li><a href="#">100% Translatable + RTL</a></li>
+                                            <li><a href="#">SVG Icons<span class="label1">New</span> </a></li>
+                                            <li><a href="#">Midnight Header<span class="label2">New</span> </a></li>
+                                            <li><a href="#">6+ Creative Menu Types</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span><i class="fa fa-paw" aria-hidden="true"></i>THEME FEATURES</span>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">14 Portfolio Styles</a></li>
+                                            <li><a href="#">10 Blog Styles</a></li>
+                                            <li><a href="#">Slide Out & Overlay Menu</a></li>
+                                            <li><a href="#">3 Product Post Styles<span class="label">New</span></a></li>
+                                            <li><a href="#">3 Shop Styles</a></li>
+                                            <li><a href="#">SEO Optimised</a></li>
+                                            <li><a href="#">Ajax Team Slides</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown mega-dropdown">
+                                <a href="#" class="dropdown-toggle m_drop_down" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Elements</a>
+                                <ul class="dropdown-menu mega-drop element-info">
+                                    <li>
+                                        <span></span>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">No coding/design required</a></li>
+                                            <li><a href="#">Drag’n’Drop Page Builder</a></li>
+                                            <li><a href="#">Extensive </a></li>
+                                            <li><a href="#">One-Click Demo Install</a></li>
+                                            <li><a href="#">3 Page Header Styles</a></li>
+                                            <li><a href="#">3 Page Header Styles</a></li>
+                                            <li><a href="#">9 Stunning Demos</a></li>
+                                            <li><a href="#">Fully Responsive</a></li>
+                                            <li><a href="#">Theme Options</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">10 Header Styles (∞ combos)</a></li>
+                                            <li><a href="#">42+ Pre-Built Pages</a></li>
+                                            <li><a href="#">Cutting Edges Features</a></li>
+                                            <li><a href="#">20+ Clean Standard Pages</a></li>
+                                            <li><a href="#">100% Translatable + RTL</a></li>
+                                            <li><a href="#">SVG Icons</a></li>
+                                            <li><a href="#">Midnight Header</a></li>
+                                            <li><a href="#">6+ Creative Menu Types</a></li>
+                                            <li><a href="#">animations</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">14 Portfolio Style</a></li>
+                                            <li><a href="#">10 Blog Styles</a></li>
+                                            <li><a href="#">Slide Out & Overlay Menu</a></li>
+                                            <li><a href="#">3 Product Post Styles</a></li>
+                                            <li><a href="#">3 Shop Styles</a></li>
+                                            <li><a href="#">SEO Optimised</a></li>
+                                            <li><a href="#">Ajax Team Slides</a></li>
+                                            <li><a href="#">Child Theme Provided</a></li>
+                                            <li><a href="#">Overlay Menu</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">590 Nucleo Icons</a></li>
+                                            <li><a href="#">600+ Font</a></li>
+                                            <li><a href="#">700+ Free Google Fonts</a></li>
+                                            <li><a href="#">Custom Font Integration</a></li>
+                                            <li><a href="#">3 Push Navigation Types</a></li>
+                                            <li><a href="#">Unlimited Colours</a></li>
+                                            <li><a href="#">16 PSDs Included</a></li>
+                                            <li><a href="#">Smart Sidebar</a></li>
+                                            <li><a href="#">Awesome Icons</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="creative_banner_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-6">
+                        <div class="c_banner_content">
+                            <h6><span>25% Discount</span> on every first project budget</h6>
+                            <h2>Digital Agency,<br>Best <span>Business Service</span></h2>
+                            <p>Agencies around the world are moving to the digital agencies. So, It is high time to introduce your agency digitaly .</p>
+                            <a href="#" class="c_btn wow fadeInUp">How We Work</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <div class="c_banner_img">
+                            <img src="image/creative-agency/creative_video.png" alt="">
+                            <a href="https://www.youtube.com/watch?v=sU3FkzUKHXU" class="video_btn video_icon"><i class="fa fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="creative_about_area">
+            <div class="container">
+                <div class="row d-flex">
+                    <div class="col-lg-7 col-md-7">
+                        <div class="cr_about_img">
+                            <div class="img_slider owl-carousel">
+                                <div class="item"></div>
+                                <div class="item two"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-5 d-flex align-items-center">
+                        <div class="cr_about_content">
+                            <h6>CAREFULLY CRAFTED</h6>
+                            <h2>Design is Much More than Simplicity</h2>
+                            <p>To design is much more than simply to assemble, to order, or even to edit: it is to add value and meaning, to illuminate, to simplify, to clarify, to modify, to dignify, to dramatize.</p>
+                            <a href="#" class="sign"><img src="image/creative-agency/sig.png" alt=""></a>
+                            <p class="small_text"><strong>CEO.</strong> Creative Agency</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="service_area c_service_area">
+            <div class="container">
+                <div class="section_title_five text-center">
+                    <h6>Awesome features</h6>
+                    <h2 class="wow fadeInUp" data-wow-delay="0.2s">Monte UI Kit Features</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="service_item wow fadeInUp" data-wow-delay="0.3s">
+                            <img src="image/icon/design-icon.png" alt="">
+                            <h4>Graphic Design</h4>
+                            <p>If you end your training now, if you choose the quick and easy path, as Vader did, you will become an agent of evil.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="service_item wow fadeInUp" data-wow-delay="0.5s">
+                            <img src="image/icon/mobile.png" alt="">
+                            <h4>Fully Responsive</h4>
+                            <p>If you end your training now, if you choose the quick and easy path, as Vader did, you will become an agent of evil.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="service_item wow fadeInUp" data-wow-delay="0.7s">
+                            <img src="image/icon/branding.png" alt="">
+                            <h4>Branding & Identity</h4>
+                            <p>If you end your training now, if you choose the quick and easy path, as Vader did, you will become an agent of evil.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="service_item wow fadeInUp" data-wow-delay="0.7s">
+                            <img src="image/icon/dev.png" alt="">
+                            <h4>Web Development</h4>
+                            <p>If you end your training now, if you choose the quick and easy path, as Vader did, you will become an agent of evil.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="service_item wow fadeInUp" data-wow-delay="0.8s">
+                            <img src="image/icon/marketing.png" alt="">
+                            <h4>Marketing</h4>
+                            <p>If you end your training now, if you choose the quick and easy path, as Vader did, you will become an agent of evil.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="service_item wow fadeInUp" data-wow-delay="0.9s">
+                            <img src="image/icon/seo.png" alt="">
+                            <h4>SEO Optimization</h4>
+                            <p>If you end your training now, if you choose the quick and easy path, as Vader did, you will become an agent of evil.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 text-center">
+                        <a href="#" class="c_btn wow fadeInUp">View All Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fiz_video_area">
+            <div class="container">
+                <div class="video_content text-center">
+                    <h3 class="wow fadeInUp" data-wow-delay="0.4s">Quo rem cumque facere modi beatae. <span>Deleniti nisi,</span> repellat quae aspernatur consequatur consequuntur, fugit asperiores delectus beatae. <span> Quae veniam,</span> quidem cupiditate quia? Ut iste deleniti.</h3>
+                    <a href="https://www.youtube.com/watch?v=sU3FkzUKHXU" class="video_btn wow fadeInLeft" data-wow-delay="0.6s">
+                        <span class="btn_play"><i class="arrow_triangle-right"></i></span>
+                        Watch Video
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--Offcanvas Menu-->
+        <div class="offcanvas_closer"></div>
+        <div class="offcanvas-menu">
+            <a href="#" class="close-offcanvas"><i class="icon_close"></i></a>
+            <ul class="nav menu" id="offcanvas-inner-menu">
+                <li><a href="#">Landing</a></li>
+                <li><a href="#l">Agency</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Apptastic</a></li>
+                <li><a href="#">Classic</a></li>
+                <li><a href="#">Bold Move</a></li>
+                <li><a href="#">Start-up</a></li>
+                <li><a href="#">Simple</a></li>
+                <li><a href="#">Magazine</a></li>
+                <li><a href="#">Modernak</a></li>
+            </ul>
+            <div class="offc-lik">
+                <a href="#">info@uplift.com</a>
+                <a href="#">+44 (0) 800 123 4567 </a>
+                <a href="#">No.1 Abbey Road </a>
+                <a href="#">London, W1 ECH, UK</a>
+            </div>
+            <a href="#" class="offc-b">contact us</a>
+            <a href="#" class="offc-b">About us</a>
+            <ul class="icon">
+                <li><a href="#"><i class="fa fa-500px" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-apple" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-android" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-btc" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-amazon" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-drupal" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <!--    managment-support-->
+        <section class="creative_design_area">
+            <div class="container">
+                <div class="row d-flex">
+                    <div class="col-lg-6 col-md-7 col-sm-12">
+                        <div class="creative_features_img">
+                            <div class="round">
+                                <div class="one"></div>
+                                <div class="two"></div>
+                                <div class="three"></div>
+                            </div>
+                            <img class="c_one wow fadeInUp" data-wow-delay="0.3s" src="image/creative-agency/cr_features.jpg" alt="">
+                            <img class="c_two wow fadeInLeft" data-wow-delay="0.9s" src="image/creative-agency/cr_features2.jpg" alt="">
+                            <img class="c_three wow fadeInRight" data-wow-delay="0.6s" src="image/creative-agency/cr_features3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5 col-sm-12 d-flex align-items-center">
+                        <div class="cr_about_content">
+                            <h6>BEAUTIFULLY DESIGNED</h6>
+                            <h2>Great solutions to design your website.</h2>
+                            <div class="media c_design_item">
+                                <div class="media-left">
+                                    <img src="image/creative-agency/icon.svg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <h6>Beautifully Designed</h6>
+                                    <p>Cras burke brown bread tickety-boo chinwag arse what a load of rubbish vagabond me old mucker .</p>
+                                </div>
+                            </div>
+                            <div class="media c_design_item">
+                                <div class="media-left">
+                                    <img src="image/creative-agency/icon2.svg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <h6>Vision For The Future</h6>
+                                    <p>Cras burke brown bread tickety-boo chinwag arse what a load of rubbish vagabond me old mucker .</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--    recent-projects-->
+        <section class="projects_area_two bg_color_three">
+            <div class="container">
+                <div class="section_title_five text-center">
+                    <h6>Case Studies</h6>
+                    <h2 class="wow fadeInUp" data-wow-delay="0.2s">Latest Work</h2>
+                </div>
+            </div>
+            <div class="layout-gallery-space">
+                <div class="portfolio_filter filter_three" id="portfolio-filter">
+                    <ul>
+                        <li class="active" data-filter="*">All</li>
+                        <li data-filter=".Psd">Brand</li>
+                        <li data-filter=".Html">Design</li>
+                        <li data-filter=".website">Graphic</li>
+                        <li data-filter=".video">video</li>
+                    </ul>
+                </div>
+                <div class="portfolio-items" id="portfolio">
+                    <div class="col-md-3 col-xs-6 grid-sizer"></div>
+                    <div class="col-md-6 col-xs-6 portfolio-col Psd Html website">
+                        <div class="portfolio-item">
+                            <img src="image/home4/port1.png" alt="">
+                            <a class="overlay text-center" href="#">
+                                <div class="overlay-inner">
+                                    <h4>Project Description</h4>
+                                    <div class="line"></div>
+                                    <p>Design</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6 portfolio-col Psd Html video">
+                        <div class="portfolio-item">
+                            <img src="image/home4/port3.png" alt="">
+                            <a class="overlay text-center" href="#">
+                                <div class="overlay-inner">
+                                    <h4>Project Description</h4>
+                                    <div class="line"></div>
+                                    <p>Design</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" col-md-3 col-xs-6 portfolio-col  website Psd">
+                        <div class="portfolio-item">
+                            <img src="image/home4/port2.png" alt="">
+                            <a class="overlay text-center" href="#">
+                                <div class="overlay-inner">
+                                    <h4>Project Description</h4>
+                                    <div class="line"></div>
+                                    <p>Design</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-6 portfolio-col Html Psd">
+                        <div class="portfolio-item">
+                            <img src="image/home4/port4.jpg" alt="">
+                            <a class="overlay text-center" href="#">
+                                <div class="overlay-inner">
+                                    <h4>Project Description</h4>
+                                    <div class="line"></div>
+                                    <p>Design</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6 portfolio-col Html">
+                        <div class="portfolio-item">
+                            <img src="image/home4/port6.png" alt="">
+                            <a class="overlay text-center" href="#">
+                                <div class="overlay-inner">
+                                    <h4>Project Description</h4>
+                                    <div class="line"></div>
+                                    <p>Design</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6 portfolio-col Psd website">
+                        <div class="portfolio-item">
+                            <img src="image/home4/port5.png" alt="">
+                            <a class="overlay text-center" href="#">
+                                <div class="overlay-inner">
+                                    <h4>Project Description</h4>
+                                    <div class="line"></div>
+                                    <p>Design</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--    innuvation-key-area-->
+        <section class="price_area price_area_two sectpad">
+            <div class="container">
+                <div class="section_title_five text-center">
+                    <h6>Intro Price</h6>
+                    <h2 class="wow fadeInUp" data-wow-delay="0.2s">Affordable Packages</h2>
+                </div>
+                <div class="row creative_price">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="price-card wow fadeInLeft" data-wow-delay="0.4s">
+                            <h2>Personal</h2>
+                            <p>The standard version</p>
+                            <p class="price"><span>49</span>/ Month</p>
+                            <ul class="pricing-offers">
+                                <li>6 Domain Names</li>
+                                <li>8 E-Mail Address</li>
+                                <li>10GB Disk Space</li>
+                                <li>Monthly Bandwidth</li>
+                                <li>Powerful Admin Panel</li>
+                            </ul>
+                            <a href="#" class="btn btn-inverse inner-b">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="price-card featured wow fadeInLeft" data-wow-delay="0.6s">
+                            <h2>Student</h2>
+                            <p>Most popular choice</p>
+                            <p class="price"><span>69</span>/ Month</p>
+                            <ul class="pricing-offers">
+                                <li>6 Domain Names</li>
+                                <li>8 E-Mail Address</li>
+                                <li>10GB Disk Space</li>
+                                <li>Monthly Bandwidth</li>
+                                <li>Powerful Admin Panel</li>
+                            </ul>
+                            <a href="#" class="btn btn-inverse inner-b">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="price-card wow fadeInLeft" data-wow-delay="0.8s">
+                            <h2>Business</h2>
+                            <p>For the whole team</p>
+                            <p class="price"><span>89</span>/ Month</p>
+                            <ul class="pricing-offers">
+                                <li>6 Domain Names</li>
+                                <li>8 E-Mail Address</li>
+                                <li>10GB Disk Space</li>
+                                <li>Monthly Bandwidth</li>
+                                <li>Powerful Admin Panel</li>
+                            </ul>
+                            <a href="#" class="btn btn-inverse inner-b">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="creative_promo_area">
+            <div class="bubble">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="container">
+                <div class="creative_content">
+                    <h2>Start with creative business</h2>
+                    <p>Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers.All of our templates were built using Webflow without writing code.</p>
+                    <div class="side_button">
+                        <a href="#" class="c_btn creative_btn">Buy template</a>
+                        <a href="#" class="c_btn creative_btn">Learn More</a>
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=sU3FkzUKHXU" class="video_btn"><i class="fa fa-play"></i> Watch Video</a>
+                </div>
+            </div>
+        </section>
+        <!-- Recent-news-area -->
+        <section class="creative_testimonial_area bg_color_three">
+            <div class="container">
+                <div class="section_title_five text-center">
+                    <h6>Testimonials</h6>
+                    <h2 class="wow fadeInUp" data-wow-delay="0.2s">Over 100,000 Happy Users All Around<br> the World</h2>
+                </div>
+                <div class="creative_testimonial">
+                    <div class="item">
+                        <div class="img"><img src="image/creative-agency/testimonial.jpg" alt=""></div>
+                        <div class="hover_content">
+                            <p>Zonked super burke fantastic I mush cracking goal,your arm off chip shop.!</p>
+                            <div class="author">
+                                <h5>Jonathon Trot</h5>
+                                <h6>CEO</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><img src="image/creative-agency/testimonial2.jpg" alt=""></div>
+                        <div class="hover_content">
+                            <p>“To feel compelled by an ad, the consumer must stand to gain something.”</p>
+                            <div class="author">
+                                <h5>Megan Star</h5>
+                                <h6>Producer</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><img src="image/creative-agency/testimonial3.jpg" alt=""></div>
+                        <div class="hover_content">
+                            <p>“To feel compelled by an ad, the consumer must stand to gain something.”</p>
+                            <div class="author">
+                                <h5>Thomas Cubriq</h5>
+                                <h6>Producer</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><img src="image/creative-agency/testimonial5.jpg" alt=""></div>
+                        <div class="hover_content">
+                            <p>“To feel compelled by an ad, the consumer must stand to gain something.”</p>
+                            <div class="author">
+                                <h5>Ermia Parker</h5>
+                                <h6>writer</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><img src="image/creative-agency/testimonial6.jpg" alt=""></div>
+                        <div class="hover_content">
+                            <p>“To feel compelled by an ad, the consumer must stand to gain something.”</p>
+                            <div class="author">
+                                <h5>Peter Swar</h5>
+                                <h6>Creative Director</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><img src="image/creative-agency/testimonial4.jpg" alt=""></div>
+                        <div class="hover_content">
+                            <p>“To feel compelled by an ad, the consumer must stand to gain something.”</p>
+                            <div class="author">
+                                <h5>Nathalie Brown</h5>
+                                <h6>Exculisive</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="fact_item">
+                            <ul class="list-unstyled">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <span class="counter">663</span>
+                            <p>Happy Client</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="fact_item">
+                            <ul class="list-unstyled">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <span class="counter">133</span>
+                            <p>Project Done</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="fact_item">
+                            <ul class="list-unstyled">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <span class="counter">09</span>
+                            <p>Rating on AppStore</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="fact_item">
+                            <ul class="list-unstyled">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <span class="counter">70000</span>
+                            <p>Active Users</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="creative_blog_area">
+            <div class="container">
+                <div class="section_title_five text-center">
+                    <h6>Latest Posts</h6>
+                    <h2 class="wow fadeInUp" data-wow-delay="0.2s">From Blog</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="creative_blog_item">
+                            <div class="blog_img">
+                                <img class="img-responsive" src="image/creative-agency/blog1.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <a href="#">
+                                    <h3> Why I say old chap that is spiffing bodge, blag pardon.</h3>
+                                </a>
+                                <p>A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action.</p>
+                                <div class="bottom_info">
+                                    <div class="text">Posted by</div>
+                                    <div class="posted_author">
+                                        <img src="image/creative-agency/clients_img2.png" alt="">
+                                        <div>Virat Kholi</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="creative_blog_item">
+                            <div class="blog_img">
+                                <img class="img-responsive" src="image/creative-agency/blog2.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <a href="#">
+                                    <h3> Aliquam mollit nemo taciti ad quae reprehenderit omnis</h3>
+                                </a>
+                                <p>A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action.</p>
+                                <div class="bottom_info">
+                                    <div class="text">Posted by</div>
+                                    <div class="posted_author">
+                                        <img src="image/creative-agency/testimonial2.jpg" alt="">
+                                        <div>Megan Star</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="creative_blog_item">
+                            <div class="blog_img">
+                                <img class="img-responsive" src="image/creative-agency/blog3.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <a href="#">
+                                    <h3>Bloke cracking goal the full monty get stuffed mate posh.</h3>
+                                </a>
+                                <p>A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action.</p>
+                                <div class="bottom_info">
+                                    <div class="text">Posted by</div>
+                                    <div class="posted_author">
+                                        <img src="image/creative-agency/testimonial5.jpg" alt="">
+                                        <div>Peter Swar</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Footer-->
+        <footer class="creative_footer_area bg_color_three">
+            <div class="container">
+                <div class="row">
+                    <div class="footer_col">
+                        <a href="#"><img src="image/logo.png" alt=""></a>
+                        <ul class="list-unstyled cf_social_icon">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_col">
+                        <h4>About Us</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Leadership</a></li>
+                            <li><a href="#">Diversity</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Wavelength</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_col">
+                        <h4>Service Pages</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Engineering</a></li>
+                            <li><a href="#">Designers</a></li>
+                            <li><a href="#">Sales</a></li>
+                            <li><a href="#">Developers</a></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">See All Teams</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_col">
+                        <h4>More Pages</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_col">
+                        <h4>Download</h4>
+                        <a href="#" class="footer_app_link">
+                            <span class="footer_app_icon">
+                                <i class="fa fa-apple"></i>
+                            </span>
+                            <span>Make for iphone</span>
+                        </a>
+                        <a href="#" class="footer_app_link">
+                            <span class="footer_app_icon">
+                                <i class="fa fa-television"></i>
+                            </span>
+                            <span>Make for Mac</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="cr_footer_bottom">
+                    <div>Carefully created by <a href="#" target="_blank" class="link-grey">Blazethemez Themes</a></div>
+                    <div>Powered by <a href="#" target="_blank" class="link-grey">Themeforest</a></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- jQuery Latest version -->
+    <script src="js/jquery-2.2.0.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <!-- Isotop JS -->
+    <script src="vendors/isotope/isotope.min.js"></script>
+
+    <!--    magnific JS-->
+    <script src="vendors/magnific/jquery.magnific-popup.min.js"></script>
+
+    <!--    owl-JS-->
+    <script src="vendors/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <!--    counter-up-JS-->
+    <script src="vendors/countdown/jquery.counterup.min.js"></script>
+    <script src="vendors/waypoint/waypoints.min.js"></script>
+    <!-- RS5.0 Core JS Files -->
+    <script src="vendors/revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+    <script src="vendors/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+    <!--RS5.0 Extensions-->
+    <script src="vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script src="vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="vendors/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="vendors/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="vendors/video/plyr.js"></script>
+    <script src="vendors/swipper/js/swiper.min.js"></script>
+    <script src="vendors/svg/vivus.js"></script>
+    <script src="vendors/svg/apear.js"></script>
+    <script src="vendors/slick/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="vendors/loader/animsition.min.js"></script>
+    <!-- jQuery custom script -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

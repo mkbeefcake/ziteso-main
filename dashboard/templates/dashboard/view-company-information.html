@@ -1,0 +1,70 @@
+{% extends "dashboard/base.html" %} 
+{% load static %}
+{% block content %}
+    
+<div class="nk-content">
+    <div class="container-fluid">
+      <div class="row page-header">
+          <div class="col-lg-6 align-self-center">
+              <h2>View Your Company Information</h2>
+          </div>
+  
+        </div>
+      <br/>
+      <section class="main-content">
+        <div class="card card-bordered h-100">
+            <div class="card-inner mb-n2">
+              <div class="card-title-group">
+                <div class="card-title card-title">
+                  <h6 class="title"> </h6>
+                </div>
+               
+              </div>
+            </div>
+            <div
+              class="nk-tb-list is-loose traffic-channel-table"
+            >
+            <table class="table table-lg">
+                <tr>
+                    <th>ziteso_number</th>
+                    <th>Pemail</th>
+                    <th>anual_sales</th>
+                    <th>business_form</th>
+                    <th>telephone</th>
+                    <th>employees</th>
+                    <th>date_incorporated</th>
+                    <th>age </th>
+                    <th>state_incorporated </th>
+                    <th>name_of_principle</th>
+                    <th>business_name</th>
+                    
+                </tr>
+                <tr>
+                   
+                  <td>{{company.ziteso_number}}</td>
+                  <td>{{company.Pemail}}</td>
+                  <td>{{company.anual_sales}}</td>
+                  <td>{{company.business_form}}</td>
+                  <td>{{company.telephone}}</td>
+                  <td>{{company.employees}}</td>
+                  <td>{{company.date_incorporated}}</td>
+                  <td>{{company.age }}</td>
+                  <td>{{company.state_incorporated }}</td>
+                  <td>{{company.name_of_principle}}</td>
+                  <td>{{company.business_name}}</td>
+                
+                </tr>
+    
+              </table>
+              <!-- .nk-tb-item -->
+            </div>
+            <!-- .nk-tb-list -->
+          </div>
+          </div>
+         
+          
+      </section>
+    </div>
+  </div>
+
+{% endblock content %}
