@@ -97,7 +97,7 @@
         <div class="dropdown header-profile2 ">
           <a class="nav-link " href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
             <div class="header-info2 d-flex align-items-center">
-              <img src="{% static 'dashboard/images/profile/pic1.jpg' %}" alt="" />
+              {% comment %} <img src="{% static 'dashboard/images/profile/pic1.jpg' %}" alt="" /> {% endcomment %}
               <div class="d-flex align-items-center sidebar-info">
                 <div>
                   <span class="font-w400 d-block">{{request.user.username}}</span>
@@ -107,7 +107,7 @@
             </div>
           </a>
           <div class="dropdown-menu dropdown-menu-end">
-            <a href="./app-profile.html" class="dropdown-item ai-icon ">
+            <a href="{% url 'dashboard:profile' %}" class="dropdown-item ai-icon ">
               <svg xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18" viewBox="0 0 24 24"
                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
@@ -151,15 +151,15 @@
               <span class="nav-text">Current Business Tradelines</span>
             </a>
           </li>
-          <li><a href="{% url 'dashboard:dispute' %}">
+          {% comment %} <li><a href="{% url 'dashboard:dispute' %}">
               <span class="nav-text">Dispute Your Business Report</span>
             </a>
-          </li>
+          </li> {% endcomment %}
           <li><a href="{% url 'dashboard:update-company-information' %}">
               <span class="nav-text">Update Your Company Information</span>
             </a>
           </li>
-          <li><a href="{% url 'dashboard:upgrade-membership' %}">
+          {% comment %} <li><a href="{% url 'dashboard:upgrade-membership' %}">
               <span class="nav-text">Upgrade Membership</span>
             </a>
           </li>
@@ -170,7 +170,7 @@
           <li><a href="{% url 'dashboard:profile' %}">
               <span class="nav-text">Profile</span>
             </a>
-          </li>
+          </li> {% endcomment %}
           <li><a href="{% url 'users:logout' %}">
               <span class="nav-text">Logout</span>
             </a>
